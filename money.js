@@ -27,18 +27,11 @@ const expanceDisplay= document.getElementById("expanse-total")
 //  balance
 const balance= document.getElementById("balance")
 
-if(incomeNum<=foodNum){
+if(incomeNum<expanceTotal){
     balance.innerText="No Money"
     expanceDisplay.innerText="Nothing"
 }
-else if(incomeNum<=rentNum){
-    balance.innerText="No Money"
-    expanceDisplay.innerText="Nothing"
-}
-else if(incomeNum<=clothesNum){
-    balance.innerText="No Money"
-    expanceDisplay.innerText="Nothing"
-}
+
 else{
     balance.innerText=balanceTotal;
 }
